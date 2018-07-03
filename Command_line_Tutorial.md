@@ -1,4 +1,4 @@
-﻿
+
 
 
 ## Basics of bioinformatic : Introduction to command lines
@@ -11,7 +11,9 @@ A command is a script/program/application .... installed on your device. To use 
 All command presented below are always present on bash terminals.
 
 **Get information about a function** : *man*
+
 **List all files and folders** : *ls*
+
 Try to use **man**  on **ls** A lot of different options are available. Try for yourself  the following : 
  - ls -l
  - ls -lh
@@ -21,6 +23,7 @@ Try to use **man**  on **ls** A lot of different options are available. Try for 
 Which one are folders, which one are files? 
 
 **Change directory** : *cd*
+
 Try to go into  Dummy :
 
     cd Dummy
@@ -28,7 +31,9 @@ Go to directory Data :
 
     cd Data
 You should now see a path on your terminal :
+
 *ubuntu@wesic-tutorial:~/Data*
+
 This indicate where you are : 
 
  - **~** is your home folder
@@ -95,6 +100,7 @@ Using the symbol **>** will allow to write the output of previous command into a
      grep TAG Rhizosphere_Sub.fastq > Codons_TAG.txt 
 
 **Text editors** 
+
 A few text editors are available on the terminal, 
 
  - vim
@@ -127,7 +133,7 @@ Let's write a simple script which will loop through all folders of Data, and cou
     done
 
  - **\*** is called a wild-card : it can replace anything, here it is used to select everything inside all folders insides all folders. 
- - **file** is variable which, to access the value of the variable you need to add **$*
- - **echo** is a command used to print a variable, so it is responsible for printing the value of **file** on screen  
+ - **file** is variable, to access the value of the variable you need to add **$**
+ - **echo** is a command used to print a variable, so it is responsible for printing the value of **file** on screen, and in Number_of_AAA_in_all_Data_files.txt.
  - We use **>>** instead of **>**, it allows to append at the end of a file, while **>**  would recreate a file each time
  
